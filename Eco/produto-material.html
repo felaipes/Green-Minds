@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Material</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Marketplace Sustentável</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="artigo.html">Artigos</a>
+            <a href="produto-material.html">Materiais</a>
+            <a href="produto-projeto.html">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="carrinho.html">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section id="material-detalhes">
+            <h2>Tijolo Ecológico</h2>
+            <div class="material-container">
+                <div class="material-imagem">
+                    <img src="tijolo.jpg" alt="Tijolo Ecológico" />
+                </div>
+                <div class="material-info">
+                    <p><strong>Descrição:</strong> Tijolo ecológico feito a partir de resíduos reciclados, ideal para construções sustentáveis.</p>
+                    <ul>
+                        <li>Resistente e durável</li>
+                        <li>Reduz o impacto ambiental</li>
+                        <li>Melhora o isolamento térmico</li>
+                    </ul>
+                    <!-- Botão de adicionar ao carrinho com o atributo data-nome -->
+                    <button id="adicionar-carrinho" class="btn" data-nome="Tijolo Ecológico">Adicionar ao Carrinho</button>
+                    <button id="adicionar-favoritos-material" class="btn">Adicionar aos Favoritos</button>
+                </div>
+            </div>
+        </section>
+        <section id="lojas-precos">
+            <h2>Disponível em Lojas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loja</th>
+                        <th>Preço</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Loja Sustentável A</td>
+                        <td>R$ 03,80</td>
+                        <td><a href="https://www.cafuringa.store/tijolo-adobe-unidade-bioconstrucao-associado/p">Visitar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Loja Verde B</td>
+                        <td>R$ 9,50</td>
+                        <td><a href="https://produto.mercadolivre.com.br/MLB-3642125681-tijolinho-brick-natural-rustico-so-paulo-rio-de-janeiro-_JM#is_advertising=true&position=2&search_layout=grid&type=pad&tracking_id=726c4f2a-9148-4711-9a11-85bb151c9bab&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=MGZhMzRkZmUtNDM4My00YmFjLWE0MmYtOGRmOTE2YTEyY2Mx">Visitar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Marketplace Sustentável - Construindo um futuro melhor!</p>
+    </footer>
+
+    <!-- Carrinho de Compras -->
+    <div id="produtos-carrinho"></div>
+</body>
+</html>
+

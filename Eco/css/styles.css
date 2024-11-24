@@ -1,0 +1,230 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2b7a78;
+}
+
+a {
+    text-decoration: none;
+    color: #2b7a78;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #2b7a78;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+section {
+    margin: 30px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2b7a78;
+    padding-bottom: 5px;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    padding: 15px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ul li:hover, ol li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Ranking Section */
+.ranking {
+    counter-reset: rank;
+}
+
+.ranking li {
+    position: relative;
+    padding: 15px 15px 15px 50px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.ranking li::before {
+    content: counter(rank) ".";
+    counter-increment: rank;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b7a78;
+}
+
+/* Search Section */
+#busca {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#busca input {
+    width: 60%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+#busca button {
+    padding: 12px 25px;
+    background-color: #2b7a78;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#busca button:hover {
+    background-color: #3aa69a;
+}
+
+#resultados-busca {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#resultados-busca ul {
+    margin: 20px auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+/* Material Details */
+#material-detalhes {
+    margin-bottom: 30px;
+}
+
+.material-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.material-imagem {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.material-imagem img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.material-info {
+    flex: 2 1 400px;
+}
+
+.material-info ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.material-info .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #2b7a78;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.material-info .btn:hover {
+    background-color: #3aa69a;
+}
+
+/* Table for Stores and Prices */
+#lojas-precos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+#lojas-precos th, #lojas-precos td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+#lojas-precos th {
+    background-color: #2b7a78;
+    color: white;
+}
+
+#lojas-precos a {
+    color: #2b7a78;
+    font-weight: bold;
+}
+
+#lojas-precos a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #17252a;
+    color: white;
+    padding: 10px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
